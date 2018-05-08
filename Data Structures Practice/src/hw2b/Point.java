@@ -1,6 +1,6 @@
-package hw2a;
+package hw2b;
 
-public class Point implements Measurable {
+public class Point implements Comparable<Point> {
 	private double x;
 	private double y;
 
@@ -35,11 +35,23 @@ public class Point implements Measurable {
 		return y;
 	}
 
-	@Override
-	public double getMeasure() {
+	public int compareTo(Point point) {
+		if(x < point.getX()) {
+			return -1;
+		} else if (x == point.getX()) {
+			if( y < point.getY()) {
+				return -1;
+			} else if (y == point.getY()) {
+				return 0;
+			} else {
+				return 1;
+			}
+		} else {
+			return 1;
+		}
+		
+		
 		// TODO Auto-generated method stub
-		double measure = Math.sqrt(x * x + y * y);
-		return measure;
-
+		
 	}
 }
