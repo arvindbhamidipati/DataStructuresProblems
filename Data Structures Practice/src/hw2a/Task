@@ -1,0 +1,1 @@
+Make the Point class implement the Measurable interface. The measure is the distance of the point from the origin.
