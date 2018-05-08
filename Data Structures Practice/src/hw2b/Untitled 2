@@ -1,8 +1,0 @@
-Task for 2B
-
-Make the Point class implement the Comparable interface. 
-To compare two points, first compare their x-coordinates. 
-If they differ, the point with the smaller x is deemed the smaller. 
-If the x-coordinates are the same, compare the y-coordinates. 
-The point with the smaller y-coordinate is then deemed the smaller. 
-If the x- and y-coordinates are the same, the points are equal (duh).
